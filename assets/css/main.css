@@ -115,37 +115,50 @@ input, select, textarea {
 
 /* Type */
 
-	html {
-		font-size: 16pt;
-	}
+html {
+    font-size: 16pt;
+}
 
-		@media screen and (max-width: 1680px) {
+@media screen and (max-width: 1680px) {
+    html {
+        font-size: 12pt;
+    }
+}
 
-			html {
-				font-size: 12pt;
-			}
+@media screen and (max-width: 1280px) {
+    html {
+        font-size: 11pt;
+    }
+}
 
-		}
+@media screen and (max-width: 360px) {
+    html {
+        font-size: 10pt;
+    }
+}
 
-		@media screen and (max-width: 1280px) {
+/* Adjustments for smaller screens */
+ul.actions.special {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-			html {
-				font-size: 11pt;
-			}
+@media (max-width: 768px) {
+    ul.actions.special {
+        flex-direction: column;
+        align-items: center;
+    }
+    ul.actions.special li {
+        margin-bottom: 10px;
+    }
+}
 
-		}
+/* Body styles */
+body {
+    color: #212931;
+}
 
-		@media screen and (max-width: 360px) {
-
-			html {
-				font-size: 10pt;
-			}
-
-		}
-
-	body {
-		color: #212931;
-	}
 
 	body, input, select, textarea {
 		font-family: "Merriweather", Georgia, serif;
